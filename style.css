@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(247, 247, 242);
+    display: flex;
+    flex-direction: column;
+}
+#contenedor {
+    background-color: white;
+    width: 70%;
+    margin: 0px auto 0px auto;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em;
+    align-items: center;
+}
+#logo {
+    width: 4em;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding-left: 1em;
+    text-indent: -0.7em;
+}
+a {
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+}
+hr {
+    color: rgb(247, 247, 242);
+    margin: 0;
+}
+footer {
+    padding: 1%;
+    text-align: center;
+    background-color: grey;
+}
+#a {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(229, 231, 224);
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+#b {
+    color: rgb(229, 231, 224);
+    margin-top:   0;
+}
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+figure {
+    margin: 0;
+}
+h1 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+h2 {
+    font-size: 1em;
+}
+aside {
+    width: 30%;
+    margin: 0 0.5em 0 0.5em;
+}
+.post {
+    width: 60%;
+    margin: 0 0.5em 0 0.5em;
+}
+figcaption {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    main {
+        display:flex;
+        flex-direction: column;
+    }
+    aside {
+        display: none;
+    }
+    .post {
+        width: 90%;
+        margin: 0 1em 0 1em;
+        padding-left: 0.5em;
+    }
+}
+@media (max-width: 600px){
+    nav {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+}
